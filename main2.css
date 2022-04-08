@@ -1,0 +1,95 @@
+body {
+  overflow-x: hidden;
+}
+
+.navbar_links{
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+.navbar_links:hover{
+  color: #2980b9;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.nav-item{
+  padding-top: 30px;
+}
+.reveal{
+    position: relative;
+    transform: translateY(300px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+.firsth1,
+.secondh1 {
+  animation-name: fadein;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+.thirdh1 {
+  animation-name: fadein;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+}
+
+.bg-image {
+  animation-name: bounceInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+.second-fr {
+  animation-name: bounceInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes fadein {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
